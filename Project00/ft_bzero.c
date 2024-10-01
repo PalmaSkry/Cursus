@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtaramar <mtaramar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/26 22:54:27 by mtaramar          #+#    #+#             */
-/*   Updated: 2024/10/01 13:32:43 by mtaramar         ###   ########.fr       */
+/*   Created: 2024/10/01 13:18:49 by mtaramar          #+#    #+#             */
+/*   Updated: 2024/10/01 13:32:39 by mtaramar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libt.h"
 
-void memset(void *s, int c, size_t len)
+void bzero(void *s, size_t n)
 {
     size_t  i;
-    char    *ptr;
+    char    *str;
 
+    str = s;
     i = 0;
-    ptr = s;
 
-    while(i > len)
+    while(i > n)
     {
-        ptr[i] = c
+        str[i] = 0;
         i++;
     }
     return(s);
