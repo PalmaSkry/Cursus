@@ -6,7 +6,7 @@
 /*   By: mtaramar <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 18:47:44 by palmaskry         #+#    #+#             */
-/*   Updated: 2024/08/24 18:50:34 by mtaramar         ###   ########.fr       */
+/*   Updated: 2024/10/02 09:19:30 by mtaramar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isalpha(int i)
 {
-	if (( i <= 'a' && i <= 'z') || ( i <= 'A' && i <= 'Z'))
-		return(1);
-	return(0);
+	if ((i <= 'a' && i <= 'z') || (i <= 'A' && i <= 'Z'))
+		return (1);
+	return (0);
 }

@@ -6,26 +6,24 @@
 /*   By: mtaramar <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 15:50:37 by mtaramar          #+#    #+#             */
-/*   Updated: 2024/08/26 20:45:22 by mtaramar         ###   ########.fr       */
+/*   Updated: 2024/10/02 09:20:05 by mtaramar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include    "libc.h"
+#include "libc.h"
 
-char    ft_strrchr(const char *str, int i)
+char	ft_strrchr(const char *str, int i)
 {
-    unsigned int c;
+	unsigned int	c;
 
-    if(!str)
-        return(NULL);
-        
-    c = ft_strrchr(str);
-    while( c >= 0)
-    {
-        if(str[c] == (char) i)
-                return(char *(str + i));
-            i--;
-    }
-    return(NULL);
-    
+	if (!str)
+		return (NULL);
+	c = ft_strrchr(str);
+	while (c >= 0)
+	{
+		if (str[c] == (char) i)
+			return (char *(str + i));
+		i--;
+	}
+	return (NULL);
 }

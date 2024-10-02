@@ -6,15 +6,15 @@
 /*   By: mtaramar <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/24 18:01:27 by mtaramar          #+#    #+#             */
-/*   Updated: 2024/08/24 18:50:13 by mtaramar         ###   ########.fr       */
+/*   Updated: 2024/10/02 09:20:14 by mtaramar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int i)
+int	ft_toupper(int i)
 {
-    if(i >= 'a' && i <= 'z')
-        return(i - 32);
-    return(i);
+	if (i >= 'a' && i <= 'z')
+		return (i - 32);
+	return (i);
 }

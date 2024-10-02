@@ -6,15 +6,15 @@
 /*   By: mtaramar <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/24 16:55:46 by mtaramar          #+#    #+#             */
-/*   Updated: 2024/08/24 18:50:13 by mtaramar         ###   ########.fr       */
+/*   Updated: 2024/10/02 09:19:39 by mtaramar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int i)
+int	ft_isdigit(int i)
 {
-    if(i >= '0' && i <= '9')
-        return (1);
-    return(0);
+	if (i >= '0' && i <= '9')
+		return (1);
+	return (0);
 }

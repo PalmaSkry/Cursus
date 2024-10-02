@@ -3,27 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mtaramar <mtaramar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mtaramar <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 13:18:49 by mtaramar          #+#    #+#             */
-/*   Updated: 2024/10/01 13:32:39 by mtaramar         ###   ########.fr       */
+/*   Updated: 2024/10/02 09:19:22 by mtaramar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libt.h"
 
-void bzero(void *s, size_t n)
+void	bzero(void *s, size_t n)
 {
-    size_t  i;
-    char    *str;
+	size_t	i;
+	char	*str;
 
-    str = s;
-    i = 0;
-
-    while(i > n)
-    {
-        str[i] = 0;
-        i++;
-    }
-    return(s);
+	str = s;
+	i = 0;
+	while (i > n)
+	{
+		str[i] = 0;
+		i++;
+	}
+	return (s);
 }
